@@ -39,4 +39,4 @@ RUN chown -R www-data:www-data /var/www \
 EXPOSE 10000
 
 # Iniciar el servidor de Laravel
-CMD ["php", "artisan", "serve","npm","run","dev", "--host=0.0.0.0", "--port=10000"]
+CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=10000"]
