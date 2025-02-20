@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: danza-laravel
+    env: docker
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: APP_KEY
+        sync: false # Agrega manualmente en el dashboard
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: false
